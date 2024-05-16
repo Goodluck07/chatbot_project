@@ -1,0 +1,86 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - affirm
+  - bot_challenge
+  - provide_name
+  - ask_music_recommendation
+  - ask_joke
+  - ask_fun_fact
+  - ask_quote
+  - deny
+  - mood_unhappy
+  - mood_great
+  - order_pizza
+  - order_food
+  - inform_food
+
+entities:
+  - name
+  - food
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+  - text: "Hey! How are you?"
+
+  utter_thanks:
+  - text: "you are welcome"
+  - text: "Sure thing"
+  - text: "Don't mention it"
+  - text: "My pleasure"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Take care"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Good to hear!"
+
+  utter_sad:
+  - text: "Sorry I couldn't help"
+
+  utter_tell_joke:
+  - text: "Why don't scientists trust atoms? Because they make up everything!"
+  - text: "Did you hear about the mathematician who’s afraid of negative numbers? He'll stop at nothing to avoid them!"
+  - text: "Why did the scarecrow win an award? Because he was outstanding in his field!"
+  - text: "Why did the tomato turn red? Because it saw the salad dressing!"
+  - text: "What do you call a fake noodle? An impasta!"
+
+  utter_share_fun_fact:
+  - text: "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!"
+  - text: "The shortest war in history lasted only 38 minutes. It was between Britain and Zanzibar on August 27, 1896!"
+  - text: "Octopuses have three hearts and blue blood!"
+  - text: "The unicorn is the national animal of Scotland!"
+  - text: "A group of flamingos is called a flamboyance!"
+
+  utter_share_quote:
+  - text: "The only way to do great work is to love what you do. – Steve Jobs"
+  - text: "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill"
+  - text: "Believe you can and you're halfway there. – Theodore Roosevelt"
+  - text: "The best way to predict the future is to create it. – Abraham Lincoln"
+  - text: "Don't let yesterday take up too much of today. – Will Rogers"
+
+actions:
+  - action_provide_greeting
+  - action_provide_music_recommendation
+  - action_extract_food_entity
+  - action_order_food
+  - action_confirm_order
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

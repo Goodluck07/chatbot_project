@@ -1,0 +1,152 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: provide_name
+  examples: |
+    - My name is [John](name)
+    - My name is [Goodluck](name)
+    - I'm [Alice](name)
+    - You can call me [Tom](name)
+
+- intent: ask_music_recommendation
+  examples: |
+    - Recommend some music
+    - I want to listen to some music
+    - I am bored
+    - Can you recommend some songs
+    - Can you suggest songs for me?
+
+- intent: ask_joke
+  examples: |
+    - Tell me a joke
+    - make me laugh
+    - Can you share a joke?
+
+- intent: ask_fun_fact
+  examples: |
+    - Tell me something interesting
+    - Share a fun fact
+
+- intent: ask_quote
+  examples: |
+    - Inspire me with a quote
+    - Share an inspirational quote
+    - Can you share some quotes
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - I am happy
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am fine
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - nope
+    - nah
+    - no it didn't
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+
+- intent: order_pizza
+  examples: |
+    - I want to order a [pizza](food)
+    - can i get a [pizza](food)
+    - I'd like to have a [pizza](food)
+    - Let's order a [pizza](food)
+    - How about a [pizza](food)
+
+- intent: order_food
+  examples: |
+    - I want to order some food
+    - Can I get some food, please
+    - Let's order some food
+
+- intent: inform_food
+  examples: |
+    - [steak](food)
+    - [burger](food)
+    - [sushi](food)
+    - [Jollof rice](food)
+    - [salad](food)
+    - [pasta](food)
+    - [beans](food)

@@ -1,0 +1,76 @@
+version: "3.1"
+
+stories:
+
+- story: Express thanks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: thanks
+  - action: utter_thanks
+
+- story: provide name and engage
+  steps:
+  - intent: provide_name
+  - action: action_provide_greeting
+
+- story: Greet and Recommend Music
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_music_recommendation
+  - action: action_provide_music_recommendation
+
+- story: ask joke and engage
+  steps:
+  - intent: ask_joke
+  - action: utter_tell_joke
+
+- story: ask fun fact and engage
+  steps:
+  - intent: ask_fun_fact
+  - action: utter_share_fun_fact
+
+- story: ask quote and engage
+  steps:
+  - intent: ask_quote
+  - action: utter_share_quote
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sad
+
+- story: End Conversation
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Order my pizza
+  steps:
+  - intent: order_food
+  - action: action_order_food
+  - intent: inform_food
+  - action: action_confirm_order
