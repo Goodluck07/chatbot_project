@@ -8,7 +8,7 @@ NOTE: You might encounter a problem of scripts not being enabled on your system.
 
 Step 4: Install rasa by running ```pip install rasa``` on your terminal with the virtual env activated
 
-step 5: Install Flask by running ```pip install Flask`` on your terminal with the virtual env activated
+step 5: Install Flask by running ```pip install Flask``` on your terminal with the virtual env activated
 
 Step 6: to train the chatbot after making changes to it, run ```rasa train``` in your terminal
 
